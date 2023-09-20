@@ -16,7 +16,7 @@ pip install opencv-python
 # Usage
 Image Preparation: Ensure you have two images:
 
-A reference image of the meter without the pointer. (Might need to edit with Gimp or similar, Clone Tool is handy :-)
+A reference image of the meter without the pointer. (Might need to edit with Gimp or similar, Clone Tool in Gimp is handy :-)
 An actual image of the meter with the pointer in position.
 
 Run the Script: Execute the script, providing the paths to the reference and actual images
