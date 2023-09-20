@@ -19,8 +19,9 @@ Image Preparation: Ensure you have two images:
 A reference image of the meter without the pointer. (Might need to edit with Gimp or similar, Clone Tool is handy :-)
 An actual image of the meter with the pointer in position.
 
-Run the Script: Execute the script, providing the paths to the reference and actual images.
-python read-needle.py --reference reference_image.png --actual data/metersample1.png --zeropoint 44 --scale 2.3 --showimage True
+Run the Script: Execute the script, providing the paths to the reference and actual images
+
+python pointer-detection.py --reference reference_image.png --actual data/metersample1.png --zeropoint 44 --scale 2.3 --showimage True
 
 Results: The script will display the processed image with the detected pointer and its angle relative to the vertical axis. It will also print whether the pointer is on the left or right side of the meter.
 
