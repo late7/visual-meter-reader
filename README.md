@@ -1,12 +1,12 @@
-## Pressure Meter Pointer Detection
+## Needle Meter Pointer Detection
 This repository contains a Python script to process and analyze images of pressure meters. The primary goal is to detect the position of the pointer (or needle) and determine its angle relative to the vertical axis. Additionally, the script identifies whether the pointer is on the left or right side of the meter.
 
 # Prerequisites
 Python 3.x
 OpenCV (opencv-python)
-You can install the required packages using:
+you most likely have already numpy already installed :-)
 
-bash
+You can install the required packages using:
 pip install opencv-python
 
 # Usage
