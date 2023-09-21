@@ -6,18 +6,23 @@ Detection process is implemented using substraction of image containin measureme
 
 
 # Prerequisites
-Python 3.10
-opencv-python ( OpenCV Python library )  
-matplot 
-numpy , which you most likely have already numpy already installed :-)
+Python 3.10 <br>
+opencv-python ( OpenCV Python library )  <br>
+matplot <br>
+numpy , which you most likely have already numpy already installed :-)<br>
 
 You can install the required packages using:
 
-pip install opencv-python \n
-pip install matplotlib \n
-pip install numpy \n
+> pip install opencv-python <br>
+> pip install matplotlib <br>
+> pip install numpy <br>
+
+NOTE: For Linux you might need also:<br>
+> sudo apt install libgl1-mesa-glx
 
 # Usage
+> git clone https://github.com/late7/visual-meter-reader.git
+
 Image Preparation: Ensure you have two images:
 
 A reference image of the meter without the pointer. (Might need to edit with Gimp or similar, Clone Tool in Gimp is handy :-)
