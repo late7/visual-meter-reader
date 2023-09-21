@@ -35,7 +35,7 @@ python pointer_detection.py --reference reference_image.png --actual data/meters
 Results: The script will display the processed image with the detected pointer and its angle relative to the vertical axis. It will also print whether the pointer is on the left or right side of the meter.
 
 # Tuning
-Adjust zero position of the meter by giving '--zeropoint' and '--scale' parameters i.e. ratio in which the units match with needle angle.
+Adjust zero position of the meter by giving '--zeropoint' (angle +- from nie o'clock) and '--scale' ( max_value_of_the_meter * needle_movement_portion_of_full_circle / 360 )  parameters i.e. ratio in which the units match with needle angle.
 If the script isn't detecting the pointer accurately, you may need to adjust parameters related to the Hough Line Transform. This can be done within the detect_line_and_angle function in the script.
 
 # Contributions
