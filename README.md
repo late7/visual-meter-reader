@@ -30,7 +30,7 @@ An actual image of the meter with the pointer in position.
 
 Run the Script: Execute the script, providing the paths to the reference and actual images
 
-python pointer_detection.py --reference reference_image.png --actual data/metersample1.png --zeropoint 44 --scale 2.3 --showimage True
+> python pointer_detection.py --reference reference_image.png --actual data/metersample1.png --zeropoint 44 --scale 2.3 --showimage True
 
 Results: The script will display the processed image with the detected pointer and its angle relative to the vertical axis. It will also print whether the pointer is on the left or right side of the meter.
 
