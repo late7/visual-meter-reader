@@ -6,12 +6,16 @@ Detection process is implemented using substraction of image containin measureme
 
 
 # Prerequisites
-Python 3.x
-OpenCV (opencv-python)
-you most likely have already numpy already installed :-)
+Python 3.10
+opencv-python ( OpenCV Python library )  
+matplot 
+numpy , which you most likely have already numpy already installed :-)
 
 You can install the required packages using:
+
 pip install opencv-python
+pip install matplotlib
+pip install numpy
 
 # Usage
 Image Preparation: Ensure you have two images:
