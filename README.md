@@ -13,9 +13,9 @@ numpy , which you most likely have already numpy already installed :-)
 
 You can install the required packages using:
 
-pip install opencv-python
-pip install matplotlib
-pip install numpy
+pip install opencv-python \n
+pip install matplotlib \n
+pip install numpy \n
 
 # Usage
 Image Preparation: Ensure you have two images:
