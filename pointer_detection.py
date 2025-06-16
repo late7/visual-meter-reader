@@ -7,7 +7,12 @@ def subtract_images(image1_path, image2_path):
     # Load the images
     img1 = cv2.imread(image1_path, cv2.IMREAD_GRAYSCALE)
     img2 = cv2.imread(image2_path, cv2.IMREAD_GRAYSCALE)
-    
+
+    if img1 is None:
+        raise FileNotFoundError(f"Could not load image: {image1_path}")
+    if img2 is None:
+        raise FileNotFoundError(f"Could not load image: {image2_path}")
+
     # Ensure both images are of the same size
     if img1.shape != img2.shape:
         raise ValueError("Both images should have the same dimensions.")
@@ -58,9 +63,10 @@ def detect_line_and_angle(image, zeropoint, showimage):
 
 def main(reference_image_path, actual_image_path, zeropoint, scale, showimage):
     result = subtract_images(reference_image_path, actual_image_path)
-    value = detect_line_and_angle(result, zeropoint, showimage) / float(scale)
+    angle = detect_line_and_angle(result, zeropoint, showimage)
 
-    if value is not None:
+    if angle is not None:
+        value = angle / float(scale)
         print(f"Meter value: {value:.2f} ")
 
 if __name__ == "__main__":
